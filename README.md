@@ -6,6 +6,7 @@
 
 1. Turn On Microsoft Edge [Publish API](https://partner.microsoft.com/en-us/dashboard/microsoftedge/publishapi), You has `Secret`/`Client ID`/`Access token URL`
 2. edit workflow yaml
+
 ```yaml
 jobs:
   build-deploy:
