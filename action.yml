@@ -22,5 +22,5 @@ inputs:
     required: true
     description: 'Microsoft Edge Add-ons API addone_file'
 runs:
-  using: node12
+  using: node16
   main: dist/index.js
