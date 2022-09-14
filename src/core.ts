@@ -1,5 +1,5 @@
-import {EdgeAddonsAPI} from "@plasmohq/edge-addons-api"
 import {debugPrintf, Inputs, Outputs} from "./main";
+import {EdgeAddonsAPI} from "./api";
 
 export function run(input: Inputs): Outputs {
     const client = new EdgeAddonsAPI({

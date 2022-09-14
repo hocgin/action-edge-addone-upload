@@ -11,8 +11,7 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
-    "@octokit/webhooks-definitions": "^3.67.3",
-    "@plasmohq/edge-addons-api": "^1.0.1"
+    "@octokit/webhooks-definitions": "^3.67.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.19.0",
