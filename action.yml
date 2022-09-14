@@ -1,4 +1,4 @@
-name: 'action-edge-addone'
+name: 'action-edge-addone-upload'
 author: 'hocgin'
 description: 'Microsoft Edge Add-ons Upload Action'
 inputs:

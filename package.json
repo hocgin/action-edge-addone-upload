@@ -1,7 +1,7 @@
 {
-  "name": "action-env",
+  "name": "action-edge-addone-upload",
   "version": "1.0.0",
-  "description": "action-env",
+  "description": "Microsoft Edge Add-ons Upload Action",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && ncc build lib/main.js",

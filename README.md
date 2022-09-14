@@ -1,4 +1,4 @@
-# action-edge-addone
+# action-edge-addone-upload
 
 > [Microsoft Edge Add-ons API](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/api/using-addons-api)
 
