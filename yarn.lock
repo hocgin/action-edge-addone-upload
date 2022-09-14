@@ -1662,10 +1662,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@zeit/ncc@^0.22.3":
-  version "0.22.3"
-  resolved "https://registry.npm.taobao.org/@zeit/ncc/download/@zeit/ncc-0.22.3.tgz#fca6b86b4454ce7a7e1e7e755165ec06457f16cd"
-  integrity sha1-/Ka4a0RUznp+Hn51UWXsBkV/Fs0=
+"@vercel/ncc@^0.34.0":
+  version "0.34.0"
+  resolved "https://registry.npmjs.org/@vercel/ncc/-/ncc-0.34.0.tgz#d0139528320e46670d949c82967044a8f66db054"
+  integrity sha512-G9h5ZLBJ/V57Ou9vz5hI8pda/YQX5HQszCs3AmIus3XzsmRn/0Ptic5otD3xVST8QLKk7AMk7AqpsyQGN7MZ9A==
 
 abab@^2.0.3:
   version "2.0.5"
