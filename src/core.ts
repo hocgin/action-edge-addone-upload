@@ -12,7 +12,5 @@ export function run(input: Inputs): Outputs {
         filePath: input.addone_file,
         notes: input.notes
     }).then(debugPrintf).catch(debugPrintf);
-
-    client.publish()
     return {};
 }
