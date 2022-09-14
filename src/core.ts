@@ -1,15 +1,18 @@
-import * as core from '@actions/core';
-import * as github from '@actions/github';
-import {
-    PullRequestEvent, PushEvent,
-    ReleaseEvent,
-} from '@octokit/webhooks-definitions/schema'
-import {Inputs, Outputs} from "./main";
+import {EdgeAddonsAPI} from "@plasmohq/edge-addons-api"
+import {debugPrintf, Inputs, Outputs} from "./main";
 
 export function run(input: Inputs): Outputs {
-    // const octokit = getOctokit(process.env.GITHUB_TOKEN!, {});
-    let context = github.context;
+    const client = new EdgeAddonsAPI({
+        productId: input.product_id,
+        clientId: input.client_id,
+        clientSecret: input.client_secret,
+        accessTokenUrl: input.access_token_url
+    })
+    client.submit({
+        filePath: input.addone_file,
+        notes: input.notes
+    }).then(debugPrintf).catch(debugPrintf);
 
-    // TODO 写你的代码..
+    client.publish()
     return {};
 }

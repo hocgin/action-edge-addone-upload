@@ -3,6 +3,12 @@ import * as core from "@actions/core";
 
 export interface Inputs {
     debug?: boolean;
+    product_id: string;
+    client_id: string;
+    client_secret: string;
+    access_token_url: string;
+    addone_file: string;
+    notes?: string;
 }
 
 export interface Outputs {
@@ -11,7 +17,13 @@ export interface Outputs {
 }
 
 let getInput = (): Inputs => ({
-    debug: core.getInput('debug') === 'true'
+    debug: core.getInput('debug') === 'true',
+    product_id: core.getInput('product_id'),
+    client_id: core.getInput('client_id'),
+    client_secret: core.getInput('client_secret'),
+    access_token_url: core.getInput('access_token_url'),
+    addone_file: core.getInput('addone_file'),
+    notes: core.getInput('notes') ?? 'unset notes',
 })
 
 let handleOutput = (output: Outputs = {}) => {

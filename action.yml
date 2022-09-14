@@ -1,10 +1,26 @@
-name: 'action-env'
+name: 'action-edge-addone'
 author: 'hocgin'
-description: '项目环境判定'
-#inputs:
-outputs:
-  env:
-    description: '最终环境: dev/test/rls/prod/unknown'
+description: 'Microsoft Edge Add-ons Upload Action'
+inputs:
+  debug:
+    description: 'debug mode'
+  notes:
+    description: 'addone publish notes'
+  product_id:
+    required: true
+    description: 'addone product id'
+  client_id:
+    required: true
+    description: 'Microsoft Edge Add-ons API client_id'
+  client_secret:
+    required: true
+    description: 'Microsoft Edge Add-ons API client_secret'
+  access_token_url:
+    required: true
+    description: 'Microsoft Edge Add-ons API access_token_url'
+  addone_file:
+    required: true
+    description: 'Microsoft Edge Add-ons API addone_file'
 runs:
   using: node12
   main: dist/index.js
