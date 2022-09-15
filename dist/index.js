@@ -74,7 +74,7 @@ let getInput = () => {
 };
 let handleOutput = (output = {}) => {
     Object.keys(output).forEach((key) => core.setOutput(key, output[key]));
-    (0, exports.debugPrintf)('输出变量: ', output);
+    debugPrintf('输出变量: ', output);
 };
 try {
     handleOutput((0, core_1.run)(getInput()));
@@ -82,11 +82,11 @@ try {
 catch (error) {
     core.setFailed(error === null || error === void 0 ? void 0 : error.message);
 }
-let debugPrintf = (...args) => {
+function debugPrintf(...args) {
     if (getInput().debug) {
         console.log(...args);
     }
-};
+}
 exports.debugPrintf = debugPrintf;
 
 
