@@ -210,7 +210,6 @@ function run(input) {
         filePath: input.addone_file,
         notes: input.notes
     }).then(main_1.debugPrintf).catch(main_1.debugPrintf);
-    client.publish();
     return {};
 }
 exports.run = run;
