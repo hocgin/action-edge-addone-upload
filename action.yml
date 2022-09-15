@@ -1,0 +1,10 @@
+name: 'action-env'
+author: 'hocgin'
+description: '项目环境判定'
+#inputs:
+outputs:
+  env:
+    description: '最终环境: dev/test/rls/prod/unknown'
+runs:
+  using: node12
+  main: dist/index.js
