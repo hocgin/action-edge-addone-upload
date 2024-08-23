@@ -6,7 +6,8 @@ export function run(input: Inputs): Outputs {
         productId: input.product_id,
         clientId: input.client_id,
         clientSecret: input.client_secret,
-        accessTokenUrl: input.access_token_url
+        accessTokenUrl: input.access_token_url,
+        uploadOnly: input.upload_only
     })
     client.submit({
         filePath: input.addone_file,

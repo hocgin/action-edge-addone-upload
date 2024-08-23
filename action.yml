@@ -21,6 +21,10 @@ inputs:
   addone_file:
     required: true
     description: 'Microsoft Edge Add-ons API addone_file'
+  upload_only:
+    required: false
+    description: '仅上传'
+    default: false
 runs:
   using: node16
   main: dist/index.js

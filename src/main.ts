@@ -8,6 +8,7 @@ export interface Inputs {
     client_secret: string;
     access_token_url: string;
     addone_file: string;
+    upload_only: boolean;
     notes?: string;
 }
 
@@ -23,6 +24,7 @@ let getInput = (): Inputs => ({
     client_secret: core.getInput('client_secret'),
     access_token_url: core.getInput('access_token_url'),
     addone_file: core.getInput('addone_file'),
+    upload_only: core.getBooleanInput('upload_only'),
     notes: core.getInput('notes') ?? 'unset notes',
 })
 
