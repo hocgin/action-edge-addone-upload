@@ -15,7 +15,8 @@ function run(input) {
         productId: input.product_id,
         clientId: input.client_id,
         clientSecret: input.client_secret,
-        accessTokenUrl: input.access_token_url
+        accessTokenUrl: input.access_token_url,
+        uploadOnly: input.upload_only
     });
     client.submit({
         filePath: input.addone_file,
@@ -69,6 +70,7 @@ let getInput = () => {
         client_secret: core.getInput('client_secret'),
         access_token_url: core.getInput('access_token_url'),
         addone_file: core.getInput('addone_file'),
+        upload_only: core.getBooleanInput('upload_only'),
         notes: (_a = core.getInput('notes')) !== null && _a !== void 0 ? _a : 'unset notes',
     });
 };
